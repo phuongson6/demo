@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row m-md-auto">
+            <div class="col">
+                <!--Header-->>
+                <header class="p-3 bg-dark text-white">>
+                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                        <a href="" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                                <use xlink:href="#bootstrap"></use>
+                            </svg>
+                        </a>
+
+                        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                            <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                            <li><a href="/User management.html" class="nav-link px-2 text-white"></a>Management</li>
+                            <li><a href="" class="nav-link px-2 text-white">Pricing</a></li>
+                            <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                            <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                        </ul>
+
+                        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                            <input type="search" class="form-control form-control-dark" placeholder="Search..."
+                                aria-label="Search">
+                        </form>
+
+                        <div class="text-end">
+                            <button type="button" class="btn btn-outline-light me-2">Login</button>
+                            <button type="button" class="btn btn-warning"><a href="/form.html"> Sign Up</a></button>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container" id="add_user_panel">
+        <div class="row">
+            <div class="col-md-6">
+                <form class="form" method="get" action="#add_user">
+                    <h2>Add user</h2>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Full Name</label>
+                            <input type="text" class="form-control" placeholder="input name" required name="fullname">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Address</label>
+                            <input type="text" class="form-control" placeholder="input address" required name="address">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Age</label>
+                            <input type="number" class="form-control" placeholder="input age" required name="age">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <input type="email" class="form-control" placeholder="input email" required name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Phone number</label>
+                            <input type="number" class="form-control" placeholder="input phonenumber" required
+                                name="phone_number">
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn-outline-success" id="add_user">Add user</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Bootstrap version v5.0.2-->
+    <script src="jquery/jQuery-3.6.3.min.js"></script>
+    <script src="jquery/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!--script xu ly-->
+    <script src="app.js"></script>
+</body>
+</script>
+</body>
+
+</html>
