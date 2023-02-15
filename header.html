@@ -5,86 +5,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nav bar</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- spec compliant (includes chorme)-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="/a/favicon.ico?2018-07" type="image/x-icon">
+    <link rel="icon" sizes="192x192" href="/assets/image/">
+
+    <meta name="theme-color" content="#f6f5f4">
+
 </head>
 
 <body>
-    <div class="container">
-        <div class="row m-md-auto">
-            <div class="col">
-                <!--Header-->>
-                <header class="p-3 bg-dark text-white">>
-                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                        <a href="" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
-                                <use xlink:href="#bootstrap"></use>
-                            </svg>
-                        </a>
+    <div class="container gx-1">
+        <div class="row ">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="col px-1 ">
+                    <a class="navbar-brand" href="#">
+                        <img src="/assets/image/output-onlinepngtools.png" alt="" width="80" height="60"
+                            class="d-inline-block align-text-top ">
+                    </a>
+                </div>
 
-                        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                            <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-                            <li><a href="/User management.html" class="nav-link px-2 text-white"></a>Management</li>
-                            <li><a href="" class="nav-link px-2 text-white">Pricing</a></li>
-                            <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-                            <li><a href="#" class="nav-link px-2 text-white">About</a></li>
-                        </ul>
-
-                        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                            <input type="search" class="form-control form-control-dark" placeholder="Search..."
-                                aria-label="Search">
-                        </form>
-
-                        <div class="text-end">
-                            <button type="button" class="btn btn-outline-light me-2">Login</button>
-                            <button type="button" class="btn btn-warning"><a href="/form.html"> Sign Up</a></button>
+                <div class="col-6">
+                    <div class="dropdown-menu"></div>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Browse
+                    </button>
+                    <div class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                        <h5>Browse Marketplace</h5>
+                        <div class="col ">
+                            <a href="#">1</a>
+                            <br />
+                            <a href="#">1.1</a>
+                            <br />
+                            <a href="#">1.2</a>
+                            <br />
                         </div>
-                    </div>
-                </header>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="container" id="add_user_panel">
-        <div class="row">
-            <div class="col-md-6">
-                <form class="form" method="get" action="#add_user">
-                    <h2>Add user</h2>
-                    <div class="row">
                         <div class="col">
-                            <label for="">Full Name</label>
-                            <input type="text" class="form-control" placeholder="input name" required name="fullname">
+                            <a href="#">2</a>
+                            <br />
                         </div>
-                        <div class="form-group">
-                            <label for="">Address</label>
-                            <input type="text" class="form-control" placeholder="input address" required name="address">
-                        </div>
-                        <div class="form-group">
-                            <label for="">Age</label>
-                            <input type="number" class="form-control" placeholder="input age" required name="age">
-                        </div>
-                        <div class="form-group">
-                            <label for="">Email</label>
-                            <input type="email" class="form-control" placeholder="input email" required name="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="">Phone number</label>
-                            <input type="number" class="form-control" placeholder="input phonenumber" required
-                                name="phone_number">
-                        </div>
-                        <div class="form-group">
-                            <button type="button" class="btn-outline-success" id="add_user">Add user</button>
+                        <div class="col">
+                            <a href="#">3</a>
+                            <br />
                         </div>
                     </div>
-                </form>
-            </div>
+                </div>
+
+                <div class="col ">
+                    <div
+                        class="collapse navbar-collapse d-block flex-row-reverse align-items-center justify-content-end">
+                        <ul class="navbar-nav ms-auto mb-1 mb-lg-0 p-1 " style="background-color: brown;">
+                            <li class="nav-item ">
+                                <a class="nav-item" href="#"><i class="fa-solid fa-cart-plus"></i>Wacthlist</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-item" href="#"><i class="fa-regular fa-heart"></i>Favourites</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-item" href="#"><i class="fa-regular fa-pen"></i>Start a Listing</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-item" href="#"><i class="fa-light fa-circle-user"></i>My Trade Me</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
         </div>
+
     </div>
+
     <!--Bootstrap version v5.0.2-->
     <script src="jquery/jQuery-3.6.3.min.js"></script>
     <script src="jquery/popper.min.js"></script>
