@@ -15,7 +15,7 @@ $(document).ready(function () {
             "<td> " + address + "</td" > +
             "<td> " + age + "</td>" +
             "<td> " + email + "</td" > +
-            "<td> " + phonenumber + "</td>" +
+            "<td> " + phone_number + "</td>" +
             "</tr>");
     });
 });
