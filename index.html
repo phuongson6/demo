@@ -17,43 +17,38 @@
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- spec compliant (includes chorme)-->
-    <!-- <meta name="mobile-web-app-capable" content="yes">
-    <link rel="shortcut icon" href="/a/favicon.ico?2018-07" type="image/x-icon">
-    <link rel="icon" sizes="192x192" href="/assets/image/">
-    <meta name="theme-color" content="#f6f5f4"> -->
-
+    <!--icon browse tab-->
+    <link rel="shortcut icon" href="/">
 </head>
 
-<body>
+<body class=" layout-top-nav skin-green">
 
     <!--Navbar-->
     <header class="header">
-        <nav class="navbar navbar-expand-lg header-nav fixed-top navbar-light bg-light ">
-            <div class="container">
-                <div class="row">
-                    <div class="col position-relative">
-                        <a class="navbar-brand" href="#" title="Trade Me- Life lives here">
-                            <img src="/assets/image/output-onlinepngtools.png"
-                                class="position-absolute top-50 start-0 translate-middle-y mx-auto " alt="Bootstrap">
+        <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light ">
+            <div class="container bg-danger">
+                <div class="row ">
+                    <div class="col-sm-4 col-md-2 col-4 justify-content-start ">
+                        <a class="navbar-brand" href="javascript:void(0)" title="Trade Me- Life lives here">
+                            <img src="./assets/image/output-onlinepngtools.png" class="logo ps-0 py-1 "
+                                style="width: 100px; ">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                             <span></span>
-                            <span></span>
-                            <span></span>
                         </button>
                     </div>
-                </div>
-                <div class="col position-relative">
-                    <div class="collapse navbar-collapse justify-content-end mx-auto position-absolute top-50 end-0 translate-middle-y"
-                        id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item d">
-                                <a class="nav-item" href="#"><i class="fa-solid fa-cart-plus"></i>Wacthlist</a>
-                            </li>
-                        </ul>
+
+                    <div class="col-sm-8 col-md-4 col-xs-8 justify-content-end position-relative">
+                        <div class="box-top-menu">
+                            <ul
+                                class="navbar-nav ms-auto mb-2 mb-lg-0 position-absolute top-50 start-100 translate-middle">
+                                <li class="nav-item ">
+                                    <a class="nav-item" href="#"><i class="fa-solid fa-cart-plus"></i> WatchList</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
