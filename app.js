@@ -1,21 +1,14 @@
-$(document).ready(function () {
-    var no = 1;
+const http = require('http');
 
-    $("#add_user").click(function () {
-        // alert("add user");
-        let fullname = $('[name="fullname"]').val();
-        let address = $('[name="address"]').val();
-        let age = $('[name="age"]').val();
-        let email = $('[name="email"]').val();
-        let phone_number = $('[name="phonenumber"]').val();
-        no++;
-        $("#dataList").append("<tr>" +
-            "<td>No</td>" +
-            "<td>" + fullname + "</td>" +
-            "<td> " + address + "</td" > +
-            "<td> " + age + "</td>" +
-            "<td> " + email + "</td" > +
-            "<td> " + phone_number + "</td>" +
-            "</tr>");
-    });
-});
+const sever = http.createServer((req, res) => {
+    console.log('run request ...');
+    res.setHeader('content-Type', 'text/html');
+    res.write('<h3> Hello world </h3>');
+    res.write('<h2> Duong Phuong Son </h2>');
+    res.end
+
+})
+
+sever.listen(3000, 'localhost', () => {
+    console.log('Node.JS sever is running on port:3000')
+})
