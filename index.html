@@ -24,21 +24,31 @@
 <body class=" layout-top-nav skin-green">
 
     <!--Navbar-->
-    <header class="header">
-        <nav class=" navbar navbar-expand-md fixed-top navbar-light bg-light ">
-            <div class="container bg-danger">
-                <div class="row h-100 align-items-center px-1">
-                    <div class="col-2 ">
-                        <a class="navbar-brand" href="javascript:void(0)" title="Trade Me- Life lives here">
-                            <img src="./assets/image/logo.png" class="logo ps-0 py-1 w-100">
-                        </a>
+    <section class="myheader">
+        <nav class=" navbar navbar-expand-md navbar-light bg-light ">
+            <div class="container bg-danger py-1">
+                <div class="row h-100 align-items-center">
+                    <div class="col-3 col-lg-3 ">
+                        <div class="row">
+                            <div class="col">
+                                <a class="navbar-brand" href="javascript:void(0)" title="Trade Me- Life lives here">
+                                    <img src="./assets/image/trademe-logo-no-tagline.png" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col btn-group">
+                                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Small button
+                                </button>
+                            </div>
+                        </div>
 
                     </div>
 
-                    <div class="col-4 offset-6 py-3 px-0">
-                        <div class="nav d-flex flex-row m-auto gx-1 ">
-                            <ul class="navbar-nav d-flex me-auto mb-2 mb-lg-0 d-inline-flex">
-                                <li class="nav-item align-items-center flex-fill d-block ">
+                    <div class="col-5 offset-4 col-lg-5 offset-lg-4  text-center bg-body  pe-1">
+                        <div class=" nav d-flex flex-row m-auto gx-1 align-self-center">
+                            <ul class="navbar-nav d-flex me-auto  mb-lg-0 d-inline-flex">
+                                <li class="nav-item  flex-fill d-block ">
                                     <a class="nav-link active" aria-current="page" href="javascript:void(0)">
                                         <img src="./assets/icon/binoculars.svg" class="mh-100" width="16" height="16"
                                             viewBox="0 0 16 16"> WatchList </a>
@@ -52,21 +62,25 @@
                                         </svg> Favourites </a>
                                 </li>
                                 <li class="nav-item flex-filld d-none d-md-block ">
+                                    <img src="./assets/icon/pencil.svg" class="mh-100" width="16" height="16"
+                                        viewBox="0 0 16 16">
+                                    </br>
                                     <a class="nav-link " aria-current="page" href="javascript:void(0)">
-                                        <img src="./assets/icon/pencil.svg" class="mh-100" width="16" height="16"
-                                            viewBox="0 0 16 16"> Start a listing </a>
+                                        Start a listing </a>
+
                                 </li>
                                 <li class="nav-item flex-fill d-block">
-                                    <a class="nav-link " aria-current="page" href="javascript:void(0)">Trade Of Me
+                                    <a class="nav-link " aria-current="page" href="javascript:void(0)">My Trade Me
                                         <img src="./assets/icon/user.svg" class="mh-100 " width="25" height="25"
                                             viewBox="0 0 25 25"></a>
                                 </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
-    </header>
+    </section>
 
     <!--Bootstrap version v5.0.2-->
     <script src="jquery/jQuery-3.6.3.min.js"></script>
