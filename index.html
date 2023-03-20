@@ -24,63 +24,61 @@
 <body class=" layout-top-nav skin-green">
 
     <!--Navbar-->
-    <section class="myheader">
-        <nav class=" navbar navbar-expand-md navbar-light bg-light ">
-            <div class="container bg-danger py-1">
-                <div class="row h-100 align-items-center">
-                    <div class="col-2 col-md-2 ">
-                        <div class="row">
-                            <div class="col">
-                                <a class="navbar-brand" href="javascript:void(0)" title="Trade Me- Life lives here">
-                                    <img src="./assets/image/trademe-logo-no-tagline.png" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="col-2 btn-group">
-                                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Small button
-                                </button>
-                            </div>
-                        </div>
 
+    <nav class=" navbar navbar-expand-md navbar-light bg-light ">
+        <div class="container bg-danger py-1">
+            <div class="row h-100 align-items-center">
+                <div class="col-2 col-md-2 d-block ">
+                    <div class="row">
+                        <div class="col">
+                            <a class="navbar-brand" href="javascript:void(0)" title="Trade Me- Life lives here">
+                                <img src="./assets/image/trademe-logo-no-tagline.png" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-2 btn-group d-none d-md-block">
+                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Browse
+                            </button>
+                        </div>
                     </div>
 
-                    <div class="col-6 offset-4 col-md-6 offset-md-4 text-center bg-body ">
-                        <div class=" nav d-flex flex-column m-auto gx-1 align-items-center">
-                            <ul class="navbar-nav d-flex justify-content-around ">
-                                <li class="nav-item  flex-fill d-block ">
-                                    <a class="nav-link active" aria-current="page" href="javascript:void(0)">
-                                        <img src="./assets/icon/binoculars.svg" class="mh-100" width="16" height="16"
-                                            viewBox="0 0 16 16"> WatchList </a>
-                                </li>
-                                <li class="nav-item flex-fill d-none d-md-block">
-                                    <a class="nav-link active" aria-current="page" href="javascript:void(0)">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                            <path
-                                                d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                                        </svg> Favourites </a>
-                                </li>
-                                <li class="nav-item flex-filld d-none d-md-block ">
-                                    <img src="./assets/icon/pencil.svg" class="mh-100" width="16" height="16"
-                                        viewBox="0 0 16 16">
-                                    </br>
-                                    <a class="nav-link " aria-current="page" href="javascript:void(0)">
-                                        Start a listing </a>
+                </div>
 
-                                </li>
-                                <li class="nav-item flex-fill d-block">
-                                    <a class="nav-link " aria-current="page" href="javascript:void(0)">My Trade Me
-                                        <img src="./assets/icon/user.svg" class="mh-100 " width="25" height="25"
-                                            viewBox="0 0 25 25"></a>
-                                </li>
-                            </ul>
-                        </div>
+                <div class="col-6 offset-4 col-md-6 offset-md-4 text-center bg-body ">
+                    <div class=" nav d-flex flex-column align-self-">
+                        <ul class="navbar-nav d-flex justify-content-evenly w-100 me-auto">
+                            <li class="nav-item  flex-fill d-inline-block ">
+                                <a class="nav-link active" aria-current="page" href="javascript:void(0)">
+                                    <img src="./assets/icon/binoculars.svg" class="mh-100" width="16" height="16"
+                                        viewBox="0 0 16 16">
+                                    WatchList </a>
+                            </li>
+                            <li class="nav-item flex-md-fill d-none d-md-block">
+                                <a class="nav-link " aria-current="page" href="javascript:void(0)">
+                                    <img src="./assets/icon/love.svg" class="mh-100" width="16" height="16"
+                                        viewBox="0 0 16 16">
+                                    Favourites </a>
+                            </li>
+                            <li class="nav-item flex-md-fill d-none d-md-block ">
+                                <a class="nav-link " aria-current="page" href="javascript:void(0)">
+                                    <img src="./assets/icon/pencil.svg" class="mh-100" width="16" height="16"
+                                        viewBox="0 0 16 16"></br>
+                                    Start a listing </a>
+
+                            </li>
+                            <li class="nav-item flex-fill d-inline-block ms-auto">
+                                <a class="nav-link " aria-current="page" href="javascript:void(0)">My Trade Me
+                                    <img src="./assets/icon/user.svg" class="mh-100 " width="20" height="20"
+                                        viewBox="0 0 20 20"></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </nav>
-    </section>
+        </div>
+    </nav>
+
 
     <!--Bootstrap version v5.0.2-->
     <script src="jquery/jQuery-3.6.3.min.js"></script>
