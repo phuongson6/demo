@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
     <!--Style Css-->
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -21,10 +21,8 @@
     <link rel="shortcut icon" href="./assets/icon/icon-browser-website.png">
 </head>
 
-<body class=" layout-top-nav skin-green">
-
-
-    <div class="container-fluid ">
+<body>
+    <div class="container-fluid px-2">
 
         <!--Navbar-->
 
@@ -34,11 +32,11 @@
                     <img src="./assets/image/trademe-logo-no-tagline.png" class="img-fluid" width="150px">
                 </a>
                 <button class="btn btn-light shadow-none dropdown-toggle d-none d-md-inline " type="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
+                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
                     Browse
                 </button>
 
-                <div class="container-fluid mt-1 dropdown-menu bg-light ">
+                <div class="container-fluid mt-0 dropdown-menu bg-light ">
                     <div class="row mx-1 ">
                         <h3>Browse Marketplace</h3>
                         <ul class="col ms-1 list-unstyled">
@@ -105,14 +103,14 @@
                             <li><a href="javascript:void(0)" class="link-success ">Porperty</a></li>
                         </div>
                         <div class="col">
-                            <li><a href="javascript:void(0)" class="link text-dark">Services</a></li>
+                            <li><a href="javascript:void(0)" class="link-text-dark">Services</a></li>
                         </div>
                     </div>
                 </div>
 
             </div>
 
-            <div class="col navbar-nav d-flex justify-content-end btn-group" style="color: #65605d;">
+            <div class="col navbar-nav d-flex justify-content-end btn-group">
                 <div class="nav-item ">
                     <span class="ml-2 "></span>
                     <button class="btn btn-outline-danger shadow-none  ">
@@ -142,19 +140,31 @@
         <!--END NAVBAR-->
 
         <!--Search-->
-        <div class="row " style="background-color:#6610f2;">
-            <h1 class="col-12 my-4 text-white-50 display-5">
+        <div class="row position-relative bg-indigo-600">
+            <h1 class="col-12 my-4 text-white-50 display-3 ">
                 <p><strong>KIA ORA! READY TO FIND YOUR NEW?</strong></p>
             </h1>
-            <div class="col input-group my-3 ">
-                <input type="text" class="form-control" placeholder="&#xF002; Search all of Trade Me"
+            <div class="col-6 input-group w-50 mb-5 ">
+                <input type="text" class="form-control rounded" placeholder="&#xF002; Search all of Trade Me"
                     style="font-family:Arial, FontAwesome" aria-label="Search">
-                <div class="input-group-btn w-50 ">
-                    <button type="button" class="btn btn-primary shadow-none" type="submit">Search</button>
+                <div class="input-group-btn me-3 position-absolute top-50 end-0 translate-middle-y
+                 ">
+                    <button type="button" class="btn-sm btn-primary shadow-none" type="submit">Search</button>
                 </div>
             </div>
         </div>
-
+        <div class="row row-cols-2 row-cols-md-6 
+            gy-2 gx-2 bg-light justify-content-center btn-group-lg">
+            <button type="button" class="col btn btn-danger">Market</button>
+            <button type="button" class="col btn btn-warning">Jobs</button>
+            <button type="button" class="col btn btn-secondary">Motors</button>
+            <button type="button" class="col btn btn-success">Porperty</button>
+            <button type="button" class="col btn btn-dark">Services</button>
+            <button class="btn btn-link shadow-none d-md-none border " type="button" data-bs-toggle="dropdown"
+                aria-expanded="false" data-bs-offset="10,20">
+                Browse
+            </button>
+        </div>
     </div>
 
 
