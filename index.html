@@ -5,70 +5,202 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nav bar</title>
+    <title>Buy & Sell on NZ's #1 Auction & Classified Site |Trade Me</title>
     <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
 
     <!-- Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
     <!--Style Css-->
     <link rel="stylesheet" href="style.css">
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- spec compliant (includes chorme)-->
-    <!-- <meta name="mobile-web-app-capable" content="yes">
-    <link rel="shortcut icon" href="/a/favicon.ico?2018-07" type="image/x-icon">
-    <link rel="icon" sizes="192x192" href="/assets/image/">
-    <meta name="theme-color" content="#f6f5f4"> -->
-
+    <!--icon browse tab-->
+    <link rel="shortcut icon" href="./assets/icon/icon-browser-website.png">
 </head>
 
 <body>
+    <div class="container-fluid px-2">
 
-    <!--Navbar-->
-    <header class="header">
-        <nav class="navbar navbar-expand-lg header-nav fixed-top navbar-light bg-light ">
-            <div class="container">
-                <div class="row">
-                    <div class="col position-relative">
-                        <a class="navbar-brand" href="#" title="Trade Me- Life lives here">
-                            <img src="/assets/image/output-onlinepngtools.png"
-                                class="position-absolute top-50 start-0 translate-middle-y mx-auto " alt="Bootstrap">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
-                    </div>
-                </div>
-                <div class="col position-relative">
-                    <div class="collapse navbar-collapse justify-content-end mx-auto position-absolute top-50 end-0 translate-middle-y"
-                        id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item d">
-                                <a class="nav-item" href="#"><i class="fa-solid fa-cart-plus"></i>Wacthlist</a>
+        <!--Navbar-->
+
+        <div class="row navbar navbar-expand d-flex justify-content-around align-items-center bg-light">
+            <div class="col">
+                <a class="navbar-brand" href="javascript:void(0)" title="Trade Me - Life lives here">
+                    <img src="./assets/image/trademe-logo-no-tagline.png" class="img-fluid" width="150px">
+                </a>
+                <button class="btn btn-light shadow-none dropdown-toggle d-none d-md-inline " type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+                    Browse
+                </button>
+
+                <div class="container-fluid mt-0 dropdown-menu bg-light ">
+                    <div class="row mx-1 ">
+                        <h3>Browse Marketplace</h3>
+                        <ul class="col ms-1 list-unstyled">
+                            <li><a href="javascript:void(0)" class="dropdown-item ">Antiques &
+                                    collectables</a></li>
+                            <li><a href="javascript:void(0)" class="dropdown-item ">Art</a></li>
+                            <li><a href="javascript:void(0)" class="dropdown-item ">Baby gear</a></li>
+                            <li><a href="javascript:void(0)" class="dropdown-item ">Books</a></li>
+                            <li><a href="javascript:void(0)" class="dropdown-item ">Building &
+                                    renovation</a></li>
+                            <li><a href="javascript:void(0)" class="dropdown-item ">Business, farming &
+                                    industry</a></li>
+                        </ul>
+                        <ul class="col ms-1 list-unstyled">
+                            <li><a href="javascript:void(0)" class="dropdown-item ">Clothing & Fashion</a>
+                            </li>
+                            <li><a href="javascript:void(0)" class="dropdown-item ">Computers</a></li>
+                            <li><a href="javascript:void(0)" class="dropdown-item ">Crafts</a></li>
+                            <li><a href="javascript:void(0)" class="dropdown-item ">Electronics &
+                                    photography</a></li>
+                            <li><a href="javascript:void(0)" class="dropdown-item ">Gaming</a></li>
+                            <li><a href="javascript:void(0)" class="dropdown-item ">Health & beauty</a>
+                            </li>
+                        </ul>
+                        <ul class="col ms-1 list-unstyled">
+                            <li><a href="javascript:void(0)" class="dropdown-item ">Home & living</a></li>
+                            <li><a href="javascript:void(0)" class="dropdown-item ">Jewellery &
+                                    watches</a></li>
+                            <li><a href="javascript:void(0)" class="dropdown-item ">Mobile phones</a></li>
+                            <li><a href="javascript:void(0)" class="dropdown-item ">Movies & TV</a></li>
+                            <li><a href="javascript:void(0)" class="dropdown-item ">Music &
+                                    instruments</a></li>
+                            <li><a href="javascript:void(0)" class="dropdown-item ">Pets & animals</a>
+                            </li>
+                        </ul>
+                        <ul class="col ms-1 list-unstyled">
+                            <li><a href="javascript:void(0)" class="dropdown-item ">Pottery & glass</a>
+                            </li>
+                            <li><a href="javascript:void(0)" class="dropdown-item ">Sports</a></li>
+                            <li><a href="javascript:void(0)" class="dropdown-item ">Toys & models</a></li>
+                            <li><a href="javascript:void(0)" class="dropdown-item ">Travel, events &
+                                    activities</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a href="javascript:void(0)" class="dropdown-item ">Trade Me Stores</a>
                             </li>
                         </ul>
                     </div>
+                    <div>
+                        <hr class="dropdown-divider">
+                    </div>
+                    <div class="row mx-2 my-1 fw-bolder d-none d-md-flex">
+                        <div class="col">
+                            <li><a href="javascript:void(0)" class="link-danger">Marketplace</a></li>
+                        </div>
+                        <div class="col">
+                            <li><a href="javascript:void(0)" class="link-warning">Jobs</a></li>
+                        </div>
+                        <div class="col">
+                            <li><a href="javascript:void(0)" class="link-secondary">Motors</a></li>
+                        </div>
+                        <div class="col">
+                            <li><a href="javascript:void(0)" class="link-success ">Porperty</a></li>
+                        </div>
+                        <div class="col">
+                            <li><a href="javascript:void(0)" class="link-text-dark">Services</a></li>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col navbar-nav d-flex justify-content-end btn-group">
+                <div class="nav-item ">
+                    <span class="ml-2 "></span>
+                    <button class="btn btn-outline-primary shadow-none  ">
+                        <i class="fa-sharp fa-solid fa-binoculars fa-rotate-180"></i> WatchList
+                    </button>
+                </div>
+                <div class="nav-item d-none d-md-block ">
+                    <span class="ml-2"></span>
+                    <button class="btn btn-outline-primary shadow-none">
+                        <i class="fa-regular fa-heart"></i> Favourites
+                    </button>
+                </div>
+                <div class="nav-item d-none d-md-block ">
+                    <span class="ml-2 "></span>
+                    <button class="btn btn-outline-primary shadow-none ">
+                        <i class="fa-solid fa-pen"></i>Start a listing
+                    </button>
+                </div>
+                <div class="nav-item ">
+                    <span class="ml-2"></span>
+                    <button class="btn btn-outline-primary shadow-none ">
+                        My Trade Me <i class="fa-solid fa-user"></i>
+                    </button>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+        <!--END NAVBAR-->
+
+        <!--Search-->
+        <div class="row position-relative bg-indigo-600">
+            <h1 class="col-12 my-4 text-white-50 display-3 ">
+                <p><strong>KIA ORA! READY TO FIND YOUR NEW?</strong></p>
+            </h1>
+            <div class="col-6 input-group w-50 mb-5 ">
+                <input type="text" class="form-control rounded" placeholder="&#xF002; Search all of Trade Me"
+                    style="font-family:Arial, FontAwesome" aria-label="Search">
+                <div class="input-group-btn me-3 position-absolute top-50 end-0 translate-middle-y
+                 ">
+                    <button type="button" class="btn-sm btn-primary shadow-none" type="submit">Search</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row position-relative">
+            <div class="btn-group btn-group-lg d-none d-md-flex position-absolute top-0 start-50 translate-middle w-100 "
+                role="group">
+                <button type="button" class="btn btn-danger">Market</button>
+                <button type="button" class="btn btn-warning">Jobs</button>
+                <button type="button" class="btn btn-secondary">Motors</button>
+                <button type="button" class="btn btn-success">Porperty</button>
+                <button type="button" class="btn btn-dark">Services</button>
+            </div>
+
+            <div class="row row-cols-2 mx-1 g-1 d-md-none position-absolute top-0 start-0 ">
+                <div class="col">
+                    <div class="p-3 border bg-light text-danger"><span class="me-1"><i
+                                class="fa-solid fa-bag-shopping"></i></span>
+                        Market</div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border bg-light text-warning"><span class="me-1"><i
+                                class="fa-sharp fa-solid fa-briefcase"></i></span> Jobs</div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border bg-light text-secondary"><span class="me-1"><i
+                                class="fa-solid fa-car-side"></i></span>Motors</div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border bg-light text-success"><span class="me-1"><i
+                                class="fa-sharp fa-solid fa-house"></i></span>Porperty</div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border bg-light text-dark"><span class="me-1"><i
+                                class="fa-sharp fa-solid fa-screwdriver-wrench"></i></span>Services</div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border bg-light link-primary text-decoration-underline ">Browse</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--Bootstrap version v5.0.2-->
-    <script src="jquery/jQuery-3.6.3.min.js"></script>
-    <script src="jquery/popper.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/html" src="./jquery/jQuery-2.6.2.min.js"></script>
+    <script type="text/javascript" src="./jquery/popper.min.js"></script>
+    <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
 
-    <!--script xu ly-->
-    <script src="app.js"></script>
-</body>
-</script>
+    <!--script parents-->
+    <!-- <script src="app.js"></script> -->
+
 </body>
 
 </html>
