@@ -1,32 +1,57 @@
 /* Google Front Import - Popins*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap');
 
-*{ padding: 0; margin: 0;box-sizing: border-box;}
 html, body{
-    overflow-x: hidden;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', 'sans-serif';
     line-height: 24px;
     font-size: 14px;
     box-sizing: border-box;
-    color: #516171;
+    color: #65605d;
+    align-items: center;
+    margin: auto;
 }
 
-/* NAVBAR*/
-.img{
-  max-width: 100%;
-  height: auto;
-  margin: 0px 8px 0px -8px;
-  padding: 8px;
+/*NAVBAR*/
+.row{
+  padding-left: 8px;
+ 
 }
-.navbar{
-  box-shadow: 0px 6px 30px rgb(0,0,0,0.08);
+.navbar button{
+  color: #65605d;
 }
-
-.nav-link{
-  transition: all 0.2s;
-}
-
-.nav-link:hover{
+.navbar button:hover{
+  color: #65605d;
   text-decoration: underline;
 }
+.navbar .a img{
+  width: 150px;
+  height: 24px;
+  padding: 8px;
+  margin: 8px;
+  width: 16px;
+}
+
+/* Searching-bar*/
+.bg-indigo-600{
+  background-color: blueviolet;
+}
+
+/* Media Query*/
+@media(max-width: 992px
+) { 
+}
+@media(max-width: 768px
+) { 
+  
+}
+@media(max-width: 576px
+) { 
+
+  .navbar button{
+    font-size: 10px;
+    line-height: 15px;
+  };
+  
+}
+
 
