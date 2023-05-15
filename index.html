@@ -22,10 +22,10 @@
 </head>
 
 <body>
-    <div class="container-fluid px-2">
+    <div class="container-fluid ">
         <!--Navbar-->
 
-        <div class="row navbar navbar-expand d-flex justify-content-around align-items-center bg-light">
+        <div class="row navbar navbar-expand d-flex justify-content-between bg-light">
             <div class="col">
                 <a class="navbar-brand" href="javascript:void(0)" title="Trade Me - Life lives here">
                     <img src="./assets/image/trademe-logo-no-tagline.png" class="img-fluid" width="150px">
@@ -106,19 +106,18 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <div class="col navbar-nav d-flex justify-content-end btn-group">
                 <div class="nav-item ">
                     <span class="ml-2 "></span>
-                    <button class="btn  shadow-none  ">
+                    <button class="btn">
                         <i class="fa-sharp fa-solid fa-binoculars fa-rotate-180"></i> WatchList
                     </button>
                 </div>
                 <div class="nav-item d-none d-md-block ">
                     <span class="ml-2"></span>
-                    <button class="btn shadow-none">
+                    <button class="btn">
                         <i class="fa-regular fa-heart"></i> Favourites
                     </button>
                 </div>
@@ -140,53 +139,55 @@
 
         <!--Search-->
         <div class="row bg-indigo-600">
-            <h1 class="col-12 my-4 text-white-50 display-3 ">
+            <h1 class="col-12 my-4 ">
                 <p><strong>KIA ORA! READY TO FIND YOUR NEW?</strong></p>
             </h1>
             <div class="col col-md-6 input-group-lg mb-5 position-relative" id="Searching-form">
-                <input type="text" class="form-control rounded" placeholder="&#xF002; Search all of Trade Me"
+                <input type="text" class="form-control " placeholder="&#xF002; Search all of Trade Me"
                     style="font-family:Arial, FontAwesome" aria-label="Search">
                 <div class="input-group-btn me-3 position-absolute top-50 end-0 translate-middle-y
                  ">
-                    <button type="button" class="btn btn-primary" type="submit">Search</button>
+                    <button type="button" class="btn-lg btn-primary d-none d-md-inline" type="submit">Search</button>
+                    <button type="button" class="btn btn-primary d-md-none" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </div>
         </div>
 
         <div class="row position-relative">
-            <div class="btn-group btn-group-lg d-none d-md-flex position-absolute top-0 start-50 translate-middle w-100 "
-                role="group">
-                <button type="button" class="btn btn-danger my-button">Market</button>
+            <div class="btn-group btn-group-lg d-none d-md-flex position-absolute top-0 start-50 translate-middle "
+                role="group" id="list-item-button">
+                <button type="button" class="btn btn-danger">Market</button>
                 <button type="button" class="btn btn-warning">Jobs</button>
                 <button type="button" class="btn btn-secondary">Motors</button>
                 <button type="button" class="btn btn-success">Porperty</button>
                 <button type="button" class="btn btn-dark">Services</button>
             </div>
 
-            <div class="row row-cols-2 mx-1 g-2 d-md-none position-absolute top-0 start-0 ">
+            <div class="row row-cols-2 d-md-none my-1 px-3 g-2 position-absolute top-0 start-0 ">
                 <div class="col">
-                    <div class="p-3 border bg-light text-danger"><span class="me-1"><i
+                    <div class="p-3 border bg-list-item text-danger"><span class="me-1"><i
                                 class="fa-solid fa-bag-shopping"></i></span>
                         Market</div>
                 </div>
                 <div class="col">
-                    <div class="p-3 border bg-light text-warning"><span class="me-1"><i
+                    <div class="p-3 border bg-list-item text-warning"><span class="me-1"><i
                                 class="fa-sharp fa-solid fa-briefcase"></i></span> Jobs</div>
                 </div>
                 <div class="col">
-                    <div class="p-3 border bg-light text-secondary"><span class="me-1"><i
+                    <div class="p-3 border bg-list-item text-secondary"><span class="me-1"><i
                                 class="fa-solid fa-car-side"></i></span>Motors</div>
                 </div>
                 <div class="col">
-                    <div class="p-3 border bg-light text-success"><span class="me-1"><i
+                    <div class="p-3 border bg-list-item text-success"><span class="me-1"><i
                                 class="fa-sharp fa-solid fa-house"></i></span>Porperty</div>
                 </div>
                 <div class="col">
-                    <div class="p-3 border bg-light text-dark"><span class="me-1"><i
+                    <div class="p-3 border bg-list-item text-dark"><span class="me-1"><i
                                 class="fa-sharp fa-solid fa-screwdriver-wrench"></i></span>Services</div>
                 </div>
                 <div class="col">
-                    <div class="p-3 border bg-light link-primary text-decoration-underline ">Browse</div>
+                    <div class="p-3 border bg-list-item link-primary text-decoration-underline ">Browse</div>
                 </div>
             </div>
         </div>

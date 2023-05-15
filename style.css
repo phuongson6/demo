@@ -1,7 +1,7 @@
 /* Google Front Import - Popins*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap');
 
-html, body{
+html,body{
     font-family: 'Poppins', 'sans-serif';
     line-height: 24px;
     font-size: 14px;
@@ -12,28 +12,72 @@ html, body{
 }
 
 /*NAVBAR*/
-.row{
-  padding-left: 8px;
- 
+  .row{
+  padding: 0px 24px;
 }
-.navbar button{
-  color: #65605d;
+.row.navbar {
+  padding: 8px 24px;
 }
-.navbar button:hover{
+.navbar-nav button{
+  text-align: center;
+  padding: 8px 12px;
+}
+.navbar-nav button.btn:hover{
   color: #65605d;
   text-decoration: underline;
 }
-.navbar .a img{
-  width: 150px;
-  height: 24px;
-  padding: 8px;
-  margin: 8px;
-  width: 16px;
+.dropdown-menu ul a{
+    color: #007acd;
+    text-decoration: none;
+    
+}
+.dropdown-menu ul a:hover{
+  color: #007acd;
+  text-decoration: underline;
+  background: none;
+  
 }
 
 /* Searching-bar*/
 .bg-indigo-600{
   background-color: blueviolet;
+}
+h1{
+  color: #f2afdc;
+  text-transform: uppercase;
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 0px 0px 8px;
+  padding: 0px 0px 16px;
+}
+input {
+  height: 48px;
+  width: 75%;
+}
+#list-item-button{
+  padding: 0px 24px;
+}
+#list-item-button .btn{
+  padding: 12x 0px;
+  border:solid #fff;
+  border-width: 10px 0px;
+  outline: none;
+}
+#list-item-button .btn:focus{
+  outline: none;
+}
+#list-item-button .btn-danger{
+  border:solid #fff;
+  border-right:  10px;
+  border-radius: 10px 0px 0px 10px;
+  border-width: 10px 0px 10px 10px;
+}
+#list-item-button .btn-dark{
+  border:solid #fff;
+  border-left: 10px;
+  border-radius: 10px 0px 10px px;
+  border-width: 10px 10px 10px 10px;
 }
 
 /* Media Query*/
@@ -42,16 +86,42 @@ html, body{
 }
 @media(max-width: 768px
 ) { 
-  
+  h1{
+    font-size: 12px;
+  }
 }
 @media(max-width: 576px
 ) { 
-
+  html,body{
+    background: #f8f9fa;
+  }
+  .row{
+    padding: 0px 2px;
+  }
+  .row .navbar{
+    padding: 0px 2px;
+  }
+  h1{
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0px 0px 0px;
+  padding: 0px 0px 4px;
+  }
   .navbar button{
-    font-size: 10px;
-    line-height: 15px;
-  };
+    font-size: 8px;
+  }
   
+  .bg-list-item{
+    display: inline-block;
+    width: 100%;
+    padding: 12px 0 12px 8px;
+    border: 1px solid #d7d5d2;
+    background-color: #fff;
+    font-weight: 400;
+  }
+  .bg-list-item i{
+    font-size:medium;
+  }
 }
 
 
