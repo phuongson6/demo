@@ -12,7 +12,7 @@ html,body{
 }
 
 /*NAVBAR*/
-  .row{
+.row{
   padding: 0px 24px;
 }
 .row.navbar {
@@ -21,15 +21,35 @@ html,body{
 .navbar-nav button{
   text-align: center;
   padding: 8px 12px;
+  cursor: pointer;
 }
 .navbar-nav button.btn:hover{
   color: #65605d;
   text-decoration: underline;
 }
+.navbar-nav i{
+  padding: 3px;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 30px; 
+  right: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.menu-header {
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
 .dropdown-menu ul a{
+    display: block;
+    padding: 8px 0;
     color: #007acd;
     text-decoration: none;
-    
+    font-size: 14px;
 }
 .dropdown-menu ul a:hover{
   color: #007acd;
@@ -51,33 +71,34 @@ h1{
   margin: 0px 0px 8px;
   padding: 0px 0px 16px;
 }
-input {
-  height: 48px;
+input{
+  height: 50px;
   width: 75%;
+  padding: 0 15px;
+  font-size: 16px;
 }
 #list-item-button{
-  padding: 0px 24px;
+  padding: 0 24px;
 }
 #list-item-button .btn{
-  padding: 12x 0px;
+  padding: 10px 0;
   border:solid #fff;
-  border-width: 10px 0px;
+  border-width: 10 0 10 10px; ;
   outline: none;
+  font-weight: 400;
 }
 #list-item-button .btn:focus{
   outline: none;
 }
 #list-item-button .btn-danger{
   border:solid #fff;
-  border-right:  10px;
-  border-radius: 10px 0px 0px 10px;
-  border-width: 10px 0px 10px 10px;
+  border-radius: 10px 0 0 10px;
+  border-width: 10 0 10 10px;
 }
 #list-item-button .btn-dark{
   border:solid #fff;
-  border-left: 10px;
-  border-radius: 10px 0px 10px px;
-  border-width: 10px 10px 10px 10px;
+  border-radius: 0 10px 10px 0;
+  border-width: 10px 10px 10 10px;
 }
 
 /* Media Query*/
@@ -99,8 +120,11 @@ input {
     padding: 0px 2px;
   }
   .row .navbar{
-    padding: 0px 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
   }
+  
   h1{
   font-size: 24px;
   line-height: 24px;
@@ -109,6 +133,7 @@ input {
   }
   .navbar button{
     font-size: 8px;
+    margin-bottom: 10px;
   }
   
   .bg-list-item{
@@ -119,8 +144,9 @@ input {
     background-color: #fff;
     font-weight: 400;
   }
-  .bg-list-item i{
-    font-size:medium;
+   i{
+    font-size:small;
+    padding: 3px;
   }
 }
 
