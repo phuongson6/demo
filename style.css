@@ -30,6 +30,7 @@ html,body{
 .navbar-nav i{
   padding: 3px;
 }
+
 .dropdown-menu {
   position: absolute;
   top: 30px; 
@@ -78,12 +79,12 @@ input{
   font-size: 16px;
 }
 #list-item-button{
-  padding: 0 24px;
+  padding: 0px 34px;
 }
 #list-item-button .btn{
-  padding: 10px 0;
-  border:solid #fff;
-  border-width: 10 0 10 10px; ;
+  padding: 10px 0px;
+  border: solid #fff;
+  border-width: 8px 0px; 
   outline: none;
   font-weight: 400;
 }
@@ -91,14 +92,14 @@ input{
   outline: none;
 }
 #list-item-button .btn-danger{
-  border:solid #fff;
-  border-radius: 10px 0 0 10px;
-  border-width: 10 0 10 10px;
+  border: 8px solid #fff;
+  border-radius: 10px 0px 0px 10px;
+  border-right: 8px;
 }
 #list-item-button .btn-dark{
-  border:solid #fff;
-  border-radius: 0 10px 10px 0;
-  border-width: 10px 10px 10 10px;
+  border: 8px solid #fff;
+  border-radius: 0 8px 0 0;
+  border-left: 8px;
 }
 
 /* Media Query*/
@@ -107,14 +108,36 @@ input{
 }
 @media(max-width: 768px
 ) { 
+  html,body{
+    background: #f8f9fa;
+    padding: auto 12px;
+  }
+
+  .row{
+    padding: 0px 12px;
+  }
+  .row .navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+  }
   h1{
-    font-size: 12px;
+    font-size: 48px;
+  }
+  .bg-list-item{
+    width: 100%;
+    padding: 12px 0 12px 8px;
+    border: 2px solid #d7d5d2;
+    background-color: #fff;
+    font-weight: 400;
+    margin: 12px 12px;
   }
 }
-@media(max-width: 576px
+@media(max-width: 568px
 ) { 
   html,body{
     background: #f8f9fa;
+    padding: auto 12px;
   }
   .row{
     padding: 0px 2px;
@@ -132,17 +155,22 @@ input{
   padding: 0px 0px 4px;
   }
   .navbar button{
-    font-size: 8px;
-    margin-bottom: 10px;
+    width: auto;
+    margin-left: 12px 12px;
+    padding: 0px ;
+    font-size: 10px;
   }
-  
+  .row-cols-2{
+    padding: 6px 0px;
+  }
   .bg-list-item{
-    display: inline-block;
     width: 100%;
     padding: 12px 0 12px 8px;
-    border: 1px solid #d7d5d2;
+    border: 2px solid #d7d5d2;
+    border-radius: 2px ;
     background-color: #fff;
     font-weight: 400;
+    margin: 8px 12px;
   }
    i{
     font-size:small;
