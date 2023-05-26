@@ -56,7 +56,6 @@ html,body{
   color: #007acd;
   text-decoration: underline;
   background: none;
-  
 }
 
 /* Searching-bar*/
@@ -140,12 +139,9 @@ input{
     padding: auto 12px;
   }
   .row{
-    padding: 0px 2px;
-  }
-  .row .navbar{
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 4px;
   }
   
   h1{
@@ -155,10 +151,18 @@ input{
   padding: 0px 0px 4px;
   }
   .navbar button{
-    width: auto;
-    margin-left: 12px 12px;
-    padding: 0px ;
-    font-size: 10px;
+    padding: 5px 10px ;
+    font-size: 12px;
+    margin-right: auto;
+    color: #65605d;
+  }
+
+  i{
+    font-size:medium;
+    padding: 3px;
+  }
+  .navbar i{
+    margin-bottom: 3px;
   }
   .row-cols-2{
     padding: 6px 0px;
@@ -166,16 +170,13 @@ input{
   .bg-list-item{
     width: 100%;
     padding: 12px 0 12px 8px;
-    border: 2px solid #d7d5d2;
+    border: 1px solid #d7d5d2;
     border-radius: 2px ;
     background-color: #fff;
     font-weight: 400;
     margin: 8px 12px;
   }
-   i{
-    font-size:small;
-    padding: 3px;
-  }
+  
 }
 
 

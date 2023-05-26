@@ -6,8 +6,7 @@
 | 2 | Padding giuawx 5 cais button : Marketplace-jobs-Moto-Property-Service. Bene ngoaif nos phair cos 1 cais padding |
 UPDATE |
 | 3 | Trong manf hinh nhor, padding cuar 6 cais button phias duoiws phair gioongs no| UPDATE|
-| 4 | Chọn chế đọ màn hình nhỏ như vây. RỒi reload trang. Nhấp chuoysoj trái vào kéo màn hình không được rrungs|In
-Progress |
+| 4 | Chọn chế đọ màn hình nhỏ như vây. RỒi reload trang. Nhấp chuoysoj trái vào kéo màn hình không được rrungs|UPDATE |
 | 5 | Check lại các button như Marker, ... cái nào người ta có để chữ đậm thì mình để chử đậm|PASSED |
 | 6 | Chiều cao của input search và banner phải bằng của người ta |PASSED |
 | 7 | bên của Trademe là lề traí của "Browser Market" Phải thẳng hàng với mấy button phía dưới. => Canh trái chổ này cho

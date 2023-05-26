@@ -24,8 +24,8 @@
 <body>
     <div class="container-fluid ">
         <!--Navbar-->
-
-        <div class="row navbar navbar-expand d-flex justify-content-between bg-light">
+        <!--HEADER ON M-SCREEN-->
+        <div class="row navbar navbar-expand justify-content-between bg-light d-none d-md-flex">
             <div class="col">
                 <a class="navbar-brand" href="javascript:void(0)" title="Trade Me - Life lives here">
                     <img src="./assets/image/trademe-logo-no-tagline.png" class="img-fluid" width="150px">
@@ -115,13 +115,13 @@
                         <i class="fa-sharp fa-solid fa-binoculars fa-rotate-180"></i> WatchList
                     </button>
                 </div>
-                <div class="nav-item d-none d-md-block ">
+                <div class="nav-item">
                     <span class="ml-2"></span>
                     <button class="btn">
                         <i class="fa-regular fa-heart"></i> Favourites
                     </button>
                 </div>
-                <div class="nav-item d-none d-md-block ">
+                <div class="nav-item">
                     <span class="ml-2 "></span>
                     <button class="btn ">
                         <i class="fa-solid fa-pen"></i>Start a listing
@@ -135,6 +135,29 @@
                 </div>
             </div>
         </div>
+        <!-- FINISH HEADER ON M-SCREEN-->
+
+        <!-- START HEADER ON SM-SCREEN-->
+        <div class="row navbar navbar-expand bg-light  d-flex d-md-none align-items-center">
+            <div class="col navbar-nav ">
+                <a class="navbar-brand me-5 my-2" href="javascript:void(0)" title="Trade Me - Life lives here">
+                    <img src="./assets/image/trademe-logo-no-tagline.png" class="img-fluid " width="150px">
+                </a>
+                <div class="nav-item me-auto">
+                    <button class="btn">
+                        <i class="fa-sharp fa-solid fa-binoculars fa-rotate-180"></i> WatchList
+                    </button>
+                </div>
+
+                <div class="nav-item me-auto">
+                    <button class="btn ">
+                        <i class="fa-solid fa-user"></i> MyTradeMe
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- END HEADER ON SM-SCREEN-->
+
         <!--END NAVBAR-->
 
         <!--Search-->
@@ -145,8 +168,7 @@
             <div class="col col-md-6 input-group-lg mb-5 position-relative" id="Searching-form">
                 <input type="text" class="form-control col-6 col-md-8 " placeholder="&#xF002; Search all of Trade Me"
                     style="font-family:Arial, FontAwesome" aria-label="Search">
-                <div class="input-group-btn me-3 position-absolute top-50 end-0 translate-middle-y
-                 ">
+                <div class="input-group-btn me-3 position-absolute top-50 end-0 translate-middle-y">
                     <button type="button" class="btn-lg btn-primary d-none d-md-inline" type="submit">Search</button>
                     <button type="button" class="btn btn-primary d-md-none" type="submit"><i
                             class="fa-solid fa-magnifying-glass"></i></button>
