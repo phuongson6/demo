@@ -132,6 +132,18 @@ input{
   font-size: 24px;
   padding: 4px;
 }
+.menu-content a {
+  text-decoration: none;
+  color: #65605d;
+  display: inline-block;
+  width: 200px;
+  margin-left: -5px;
+  font-size: 12px;
+}
+.menu-content a:hover{
+  text-decoration: underline;
+  color: #65605d;
+}
 
 /* Media Query*/
 @media(max-width: 992px
