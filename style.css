@@ -100,7 +100,7 @@ input{
   border-radius: 0 8px 0 0;
   border-left: 8px;
 }
-/*footer*/
+/*footer screen-md*/
 .footer-underline {
   border: 3px solid #bd1d20;
   border-radius: 3px; 
@@ -117,6 +117,7 @@ input{
   text-decoration: underline;
 }
 .footer ul li a{
+  font-size: 12px;
   text-decoration: none;
   color: #65605d;
   line-height: 2px;
@@ -127,6 +128,7 @@ input{
 }
 .footer-terms li{
   padding: 12px;
+  font-size: 8;
 }
 .footer-icons i{
   font-size: 24px;
@@ -135,7 +137,6 @@ input{
 .menu-content a {
   text-decoration: none;
   color: #65605d;
-  display: inline-block;
   width: 200px;
   margin-left: -5px;
   font-size: 12px;
@@ -186,7 +187,6 @@ input{
   align-items: center;
   padding: 0 0 0 4px;
   }
-  
   h1{
   font-size: 24px;
   line-height: 24px;
@@ -199,7 +199,6 @@ input{
     margin-right: auto;
     color: #65605d;
   }
-
   i{
     font-size:medium;
     padding: 3px;
@@ -219,7 +218,24 @@ input{
     font-weight: 400;
     margin: 8px 12px;
   }
-  
+  .list-group-horizontal a{
+    font-size: 10px;
+    padding: 2px;
+  }
+  .justify-content-around p{
+    font-size: 10px;
+  }
+  .footer-sm.li a{
+    font-size: 10px;
+  }
+  .menu-contents a{
+    font-size: 10px;
+  }
+  .list-group{
+    display: inline-flex;
+    background: none;
+    border: none;
+  }
 }
 
 
